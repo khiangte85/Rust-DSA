@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "factorial",
+]
+
+resolver = "2"
