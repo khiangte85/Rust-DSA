@@ -2,6 +2,7 @@
 
 members = [
     "factorial",
+    "fibonacci",
 ]
 
 resolver = "2"
