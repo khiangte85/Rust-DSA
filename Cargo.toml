@@ -5,6 +5,7 @@ members = [
     "fibonacci",
     "palindrome",
     "selection_sort",
+    "bubble_sort",
 ]
 
 resolver = "2"
