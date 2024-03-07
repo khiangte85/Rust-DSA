@@ -1,3 +1,5 @@
+use std::time::Instant;
+
 fn selection_sort(arr: &mut Vec<i32>) -> &Vec<i32> {
     for i in 0..arr.len() - 1 {
         let mut pos = i;
@@ -15,6 +17,8 @@ fn selection_sort(arr: &mut Vec<i32>) -> &Vec<i32> {
 }
 
 fn main() {
-    let mut vec: Vec<i32> = vec![5,10,1,4,11];
+    let time = Instant::now();
+    let mut vec = vec![10, 3, 6, 99, 67, 20, 12, 120, 45, 32, 45];
     println!("{:?}", selection_sort(&mut vec));
+    println!("Time {:?}", time.elapsed());
 }

@@ -1,3 +1,5 @@
+use std::time::Instant;
+
 fn bubble_sort(arr: &mut Vec<i32>) -> &Vec<i32> {
     for i in 0..arr.len() {
         for j in 0..arr.len() - (i + 1) {
@@ -11,6 +13,8 @@ fn bubble_sort(arr: &mut Vec<i32>) -> &Vec<i32> {
 }
 
 fn main() {
+    let time = Instant::now();
     let mut vec = vec![10, 3, 6, 99, 67, 20, 12, 120, 45, 32, 45];
     println!("{:?}", bubble_sort(&mut vec));
+    println!("Time {:?}", time.elapsed());
 }
