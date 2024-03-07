@@ -7,7 +7,7 @@ fn palindrome<T: PartialEq>(input: &[T]) -> bool {
         }
     }
 
-    return true;
+    true
 }
 
 fn main() {

@@ -3,6 +3,8 @@
 members = [
     "factorial",
     "fibonacci",
+    "palindrome",
+    "selection_sort",
 ]
 
 resolver = "2"
